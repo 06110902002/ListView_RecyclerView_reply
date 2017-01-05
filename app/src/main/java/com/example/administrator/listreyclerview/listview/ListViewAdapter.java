@@ -120,7 +120,7 @@ public class ListViewAdapter extends BaseAdapter {
             item.setTag(vh);
 
             i ++;
-            System.out.println("123-------------------------"+i);
+            //System.out.println("123-------------------------"+i);
         } else {
             //复用ListView给的View
             item = view;
@@ -145,7 +145,7 @@ public class ListViewAdapter extends BaseAdapter {
      * 第二种复用方式：这种方式可以优化每次设置数据时，通过findViewByid()的方式来寻找控件，
      * 因为在创建视图的时候，listView的itemview中的控件已经被绑定到ViewHolder上了
      * 所以下次复用的时候，直接可以通过ViewHolde中的对应的控件设置其值即可
-     * 
+     *
      *
      * 用于存放一个ItemView中的控件,由于这里只有两个控件,那么声明两个控件即可
      */
